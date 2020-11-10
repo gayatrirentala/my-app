@@ -4,6 +4,7 @@ stage('scm checkout'){
 }
  
  stage('compile-package'){
- sh 'mvn clean package'
+  def mvnhome = tool name: 'maven-2', type: 'maven'
+  sh "${mvnhome}/bin/mvn clean"
 }
 }
