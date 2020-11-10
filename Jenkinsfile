@@ -1,6 +1,6 @@
 node{
 stage('scm checkout'){
- url: 'https://github.com/gayatrirentala/myweb'
+ url: 'https://github.com/gayatrirentala/my-app'
 }
  
  stage('compile-package'){
