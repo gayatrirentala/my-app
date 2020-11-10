@@ -4,6 +4,6 @@ stage('scm checkout'){
 }
  
  stage('compile-package'){
- sh 'mvn package'
+ sh 'mvn clean package'
 }
 }
